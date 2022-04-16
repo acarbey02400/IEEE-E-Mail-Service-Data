@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "++N7uXl015JhRGhddkxyPN3FCgWx7fn6xdWw6GmMnirNmQ0QmmBsGk1ra3Iar9d4hs7cRQ6Ccwvn2O0FflUFeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kullanici\\source\\repos\\UpdateSystem\\UpdateSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kullanici\\.nuget\\packages\\autoupdater.net.official\\1.7.0\\autoupdater.net.official.1.7.0.nupkg.sha512",
+    "C:\\Users\\Kullanici\\.nuget\\packages\\google.apis\\1.56.0\\google.apis.1.56.0.nupkg.sha512",
+    "C:\\Users\\Kullanici\\.nuget\\packages\\google.apis.auth\\1.56.0\\google.apis.auth.1.56.0.nupkg.sha512",
+    "C:\\Users\\Kullanici\\.nuget\\packages\\google.apis.core\\1.56.0\\google.apis.core.1.56.0.nupkg.sha512",
+    "C:\\Users\\Kullanici\\.nuget\\packages\\google.apis.drive.v3\\1.56.0.2601\\google.apis.drive.v3.1.56.0.2601.nupkg.sha512",
+    "C:\\Users\\Kullanici\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

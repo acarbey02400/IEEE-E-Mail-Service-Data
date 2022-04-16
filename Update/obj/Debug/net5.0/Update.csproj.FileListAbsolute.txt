@@ -1,0 +1,14 @@
+C:\Users\Kullanici\source\repos\Update\bin\Debug\net5.0\Update.deps.json
+C:\Users\Kullanici\source\repos\Update\bin\Debug\net5.0\Update.dll
+C:\Users\Kullanici\source\repos\Update\bin\Debug\net5.0\ref\Update.dll
+C:\Users\Kullanici\source\repos\Update\bin\Debug\net5.0\Update.pdb
+C:\Users\Kullanici\source\repos\Update\bin\Debug\net5.0\Core.dll
+C:\Users\Kullanici\source\repos\Update\bin\Debug\net5.0\Core.pdb
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.csproj.AssemblyReference.cache
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.AssemblyInfoInputs.cache
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.AssemblyInfo.cs
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.csproj.CoreCompileInputs.cache
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.dll
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\ref\Update.dll
+C:\Users\Kullanici\source\repos\Update\obj\Debug\net5.0\Update.pdb

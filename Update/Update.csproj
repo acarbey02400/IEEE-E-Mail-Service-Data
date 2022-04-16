@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autoupdater.NET.Official" Version="1.7.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.56.0.2601" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReCapProject\Core\Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+C:\Users\Kullanici\source\repos\E-MailService\bin\Debug\net5.0-windows\
+E-MailService.exe
+2812
