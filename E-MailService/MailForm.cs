@@ -76,7 +76,7 @@ namespace E_MailService
                 mailMessage.Subject = subject.Text;
                 mailMessage.Body = body.Text;
                 mailMessage.To.Add(new MailAddress(item.ToString()));
-                mailMessage.IsBodyHtml = true;
+                
                 string file = openFileDialog1.FileName;
                 if (file != "openFileDialog1")
                     mailMessage.Attachments.Add(new Attachment(file));

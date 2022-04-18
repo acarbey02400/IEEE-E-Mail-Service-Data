@@ -147,6 +147,7 @@ namespace E_MailService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(237, 259);
             this.Controls.Add(this.gb1);
             this.Name = "LogIn";

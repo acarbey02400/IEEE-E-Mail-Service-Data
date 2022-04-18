@@ -13,11 +13,16 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("E-MailService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Tüm Hakları Saklıdır ve IEEE Sakarya University Student Branch Topluluğuna aittir" +
+    ".")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("IEEE Sakarya Üniversitesi Topluluğu\'na ait bir E-Mail Service uygulamasıdır.")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.1")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("E-MailService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E-MailService")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.1")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/acarbey02400/IEEE-E-Mail-Service-Data")]
+[assembly: System.Resources.NeutralResourcesLanguageAttribute("tr")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

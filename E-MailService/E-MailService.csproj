@@ -5,6 +5,18 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>E_MailService</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <Description>IEEE Sakarya Üniversitesi Topluluğu'na ait bir E-Mail Service uygulamasıdır.</Description>
+    <Copyright>Tüm Hakları Saklıdır ve IEEE Sakarya University Student Branch Topluluğuna aittir.</Copyright>
+    <PackageProjectUrl>acaribrahim.tr.ht</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/acarbey02400/IEEE-E-Mail-Service-Data</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>EMail Send Service</PackageTags>
+    <PackageReleaseNotes>Güncelleştirmeler ve iyileştirmeler yapıldı.</PackageReleaseNotes>
+    <NeutralLanguage>tr</NeutralLanguage>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

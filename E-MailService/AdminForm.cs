@@ -37,7 +37,7 @@ namespace E_MailService
 
             _userService = userService;
             dataListedUser();
-            MessageBox.Show(_userService.GetHashCode().ToString());
+            
         }
         
         //Verileri listeleyeceğimiz fonksiyon
