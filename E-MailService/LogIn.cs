@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Business.Abstract;
 using Business.Concrete;
+using Core.Utilities.EmailService.Abstract;
 using DataAccess.Concrete;
 using Entities.Concrete;
 using System;
@@ -23,17 +24,19 @@ namespace E_MailService
 
         //UserManager _userManager;
         LogManager _logManager;
-        Autofac.IContainer _container;
         IUserService _userService;
-        public LogIn(Autofac.IContainer container)
+        ICustomerService _customerService;
+        IEmailService _emailService;
+        public LogIn( IUserService userService, ICustomerService customerService,IEmailService emailService)
         {
             InitializeComponent();
             //UserManager userManager = new UserManager(new UserDal()); //Burada program çalışırken işlem yapacağımız manager'ı çağırarak programın daha hızlı çalışmasını sağlıyoruz
             LogManager logManager = new LogManager(new LogDal());
            // _userManager = userManager;
             _logManager = logManager;
-            _container = container;
-            _userService = _container.Resolve<IUserService>();
+            _customerService = customerService;
+            _emailService = emailService;
+            _userService = userService;
             using (TextReader text = new StreamReader(@".\updateLabel.txt")) //Güncelleme işlemini kontrol etmek için label'i önce en son güncellemeden gelen label değeri ile değiştiriyoruz
             {
                 updateLabel.Text = text.ReadToEnd();
@@ -57,7 +60,7 @@ namespace E_MailService
                 }
                 
             }
-            MessageBox.Show(_userService.GetHashCode().ToString());
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -78,7 +81,7 @@ namespace E_MailService
             //Burada admin veya employee kullanıcısına göre forma true false değerlerini gönderiyoruz.
            else if (comboBox1.SelectedIndex==0) 
            {
-                    Form1 form1 = new Form1(true,this,result.Data.id,_container);
+                    Form1 form1 = new Form1(true,this,result.Data.id, _userService,_customerService,_emailService);
                     this.Hide();
                     form1.Show();
                 MessageBox.Show(result.Message);
@@ -88,7 +91,7 @@ namespace E_MailService
             {
                 this.Hide();
                 MessageBox.Show(result.Message);
-                Form1 form2 = new Form1(false, this,result.Data.id,_container);
+                Form1 form2 = new Form1(false, this,result.Data.id, _userService, _customerService, _emailService);
                 form2.Show();
             }
             _logManager.add(new Log { userId = result.Data.id, logTime = DateTime.Now, typeId = 5, description = userName.Text });

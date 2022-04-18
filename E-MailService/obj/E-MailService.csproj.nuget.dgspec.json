@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kullanici\\source\\repos\\E-MailService\\E-MailService.csproj": {}
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\E-MailService\\E-MailService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kullanici\\source\\repos\\Business\\Business.csproj": {
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\Business\\obj\\",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj"
-              },
-              "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj"
               }
             }
           }
@@ -78,21 +75,109 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\obj\\",
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Auth0.ManagementApi": {
+              "target": "Package",
+              "version": "[7.15.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
+            "Google.Apis.Gmail.v1": {
+              "target": "Package",
+              "version": "[1.57.0.2650, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,11 +191,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj"
               },
-              "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj"
               }
             }
           }
@@ -149,21 +234,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kullanici\\source\\repos\\E-MailService\\E-MailService.csproj": {
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\E-MailService\\E-MailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\E-MailService\\E-MailService.csproj",
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\E-MailService\\E-MailService.csproj",
         "projectName": "E-MailService",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\E-MailService\\E-MailService.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\E-MailService\\obj\\",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\E-MailService\\E-MailService.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\E-MailService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -177,11 +262,11 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Kullanici\\source\\repos\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Business\\Business.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Business\\Business.csproj"
               },
-              "C:\\Users\\Kullanici\\source\\repos\\Update\\Update.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Update\\Update.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Update\\Update.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Update\\Update.csproj"
               }
             }
           }
@@ -195,6 +280,12 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -213,21 +304,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj": {
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,8 +332,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj"
               }
             }
           }
@@ -271,105 +362,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Update\\Update.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netstandard2.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
-          "dependencies": {
-            "Autofac": {
-              "target": "Package",
-              "version": "[6.3.0, )"
-            },
-            "Autofac.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[7.2.0, )"
-            },
-            "Autofac.Extras.DynamicProxy": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[10.4.0, )"
-            },
-            "Google.Apis.Gmail.v1": {
-              "target": "Package",
-              "version": "[1.56.0.2510, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "MimeKit": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Kullanici\\source\\repos\\Update\\Update.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\Update\\Update.csproj",
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Update\\Update.csproj",
         "projectName": "Update",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Update\\Update.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\Update\\obj\\",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Update\\Update.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Update\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -383,8 +390,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+              "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj"
               }
             }
           }
@@ -423,7 +430,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

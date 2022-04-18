@@ -23,9 +23,9 @@ namespace E_MailService
         //UserManager _userManager;
         LogManager _logManager;
         int _userId;
-        Autofac.IContainer _container;
+        
         IUserService _userService;
-        public AdminForm(int userId, Autofac.IContainer container)
+        public AdminForm(int userId, IUserService userService)
         {
             InitializeComponent();
 
@@ -34,10 +34,10 @@ namespace E_MailService
             //_userManager = userManager;
             _logManager = logManager;
             _userId = userId;
-            _container = container;
-            _userService = _container.Resolve<IUserService>();
+
+            _userService = userService;
             dataListedUser();
-            
+            MessageBox.Show(_userService.GetHashCode().ToString());
         }
         
         //Verileri listeleyeceğimiz fonksiyon

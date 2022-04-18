@@ -1,4 +1,5 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
 using Business.Constants;
 using DataAccess.Concrete;
 using Entities.Concrete;
@@ -16,15 +17,15 @@ namespace E_MailService
 {
     public partial class CustomerForm : Form
     {
-        CustomerManger _customerManager;
+        ICustomerService _customerManager;
         LogManager _logManager;
         int _userId;
-        public CustomerForm(int userId)
+        public CustomerForm(int userId,ICustomerService customerService)
         {
             InitializeComponent();
-            CustomerManger manager = new CustomerManger( new CustomerDal());
+            
             LogManager logManager = new LogManager(new LogDal());
-            _customerManager = manager;
+            _customerManager = customerService;
             _userId = userId;
             _logManager = logManager;
             dataListed();

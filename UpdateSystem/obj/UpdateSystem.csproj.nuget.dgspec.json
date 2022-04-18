@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kullanici\\source\\repos\\UpdateSystem\\UpdateSystem.csproj": {}
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\UpdateSystem\\UpdateSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kullanici\\source\\repos\\UpdateSystem\\UpdateSystem.csproj": {
+    "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\UpdateSystem\\UpdateSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\UpdateSystem\\UpdateSystem.csproj",
+        "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\UpdateSystem\\UpdateSystem.csproj",
         "projectName": "UpdateSystem",
-        "projectPath": "C:\\Users\\Kullanici\\source\\repos\\UpdateSystem\\UpdateSystem.csproj",
-        "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kullanici\\source\\repos\\UpdateSystem\\obj\\",
+        "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\UpdateSystem\\UpdateSystem.csproj",
+        "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\UpdateSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

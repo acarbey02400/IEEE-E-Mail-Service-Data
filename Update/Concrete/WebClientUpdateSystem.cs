@@ -19,7 +19,7 @@ namespace Update.Concrete
         {
             using (WebClient wc = new WebClient())
             {
-                if (!wc.DownloadString("http://acaribrahim.tr.ht/control.txt").Contains(update))
+                if (!wc.DownloadString("https://acaribrahim.tr.ht/control.txt").Contains(update))
                 {
                     return new SuccessResult();
                 }

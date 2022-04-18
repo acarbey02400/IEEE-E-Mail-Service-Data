@@ -4,6 +4,7 @@ using Autofac.Extras.DynamicProxy;
 using Business.Abstract;
 using Business.DependencyResolves.Autofac;
 using Castle.DynamicProxy;
+using Core.Utilities.EmailService.Abstract;
 using Core.Utilities.Interceptors;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -27,7 +28,7 @@ namespace E_MailService
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var container = Configure();
-            Application.Run(new LogIn(container));
+            Application.Run(new LogIn(container.Resolve<IUserService>(),container.Resolve<ICustomerService>(), container.Resolve<IEmailService>()));
         }
 
         static IContainer Configure()

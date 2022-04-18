@@ -1,5 +1,7 @@
-﻿using Business.Abstract;
+﻿using Autofac;
+using Business.Abstract;
 using Business.Concrete;
+using Core.Utilities.EmailService.Abstract;
 using DataAccess.Concrete;
 using Entities.Concrete;
 using System;
@@ -18,8 +20,10 @@ namespace E_MailService
     {
         Form _form;
         int _userId;
-        Autofac.IContainer _container;
-        public Form1(bool adminValid,Form form,int userId, Autofac.IContainer container)
+        IUserService _userService;
+        ICustomerService _customerService;
+        IEmailService _emailService;
+        public Form1(bool adminValid,Form form,int userId, IUserService userService, ICustomerService customerService, IEmailService emailService)
         {
             InitializeComponent();
             if (!adminValid)
@@ -28,8 +32,9 @@ namespace E_MailService
             }
             _form = form;
             _userId = userId;
-            _container = container;
-            
+            _customerService = customerService;
+            _emailService = emailService;
+            _userService = userService;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -45,26 +50,27 @@ namespace E_MailService
         }
         public void button1_Click(object sender, EventArgs e)
         {
-            AdminForm form = new AdminForm(_userId,_container);
+            AdminForm form = new AdminForm(_userId,_userService);
            
             form.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CustomerForm form = new CustomerForm(_userId);
+            CustomerForm form = new CustomerForm(_userId,_customerService);
             form.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MailForm form = new MailForm(_userId);
+            MailForm form = new MailForm(_userId,_emailService,_customerService);
             
                 form.Show();
             
            
             
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

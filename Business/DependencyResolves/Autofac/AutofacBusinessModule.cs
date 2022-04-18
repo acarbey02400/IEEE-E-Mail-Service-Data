@@ -3,6 +3,8 @@ using Autofac.Extras.DynamicProxy;
 using Business.Abstract;
 using Business.Concrete;
 using Castle.DynamicProxy;
+using Core.Utilities.EmailService.Abstract;
+using Core.Utilities.EmailService.Concrete;
 using Core.Utilities.Interceptors;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
@@ -21,6 +23,9 @@ namespace Business.DependencyResolves.Autofac
         {
             builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
             builder.RegisterType<UserDal>().As<IUserDal>().SingleInstance();
+            builder.RegisterType<CustomerDal>().As<ICustomerDal>().SingleInstance();
+            builder.RegisterType<CustomerManger>().As<ICustomerService>().SingleInstance();
+            builder.RegisterType<GMailServices>().As<IEmailService>().SingleInstance();
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()
                 .EnableInterfaceInterceptors(new ProxyGenerationOptions()

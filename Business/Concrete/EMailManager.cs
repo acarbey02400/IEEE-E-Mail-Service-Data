@@ -1,6 +1,7 @@
 ﻿using Core.Utilities.EmailService.Abstract;
 using Core.Utilities.Results;
 using Entities.Concrete;
+using MimeKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,11 +17,11 @@ namespace Business.Concrete
         {
             _emailService = emailService;
         }
-        public IResult SendMail(EMailTemplate template)
+        public IResult SendMail(MimeMessage template)
         {
            // string message = $"To: {template.to}\r\nSubject: {template.subject}\r\nContent-Type: text/html;charset=utf-8\r\n\r\n{template.body}";
-           var service= _emailService.SendEmail(template.body, template.to, template.subject,template.file);
-            if (service)
+           var service= _emailService.sendMail(template);
+            if (service.Success)
             {
                 return new SuccessResult("Mail gönderildi");
             }

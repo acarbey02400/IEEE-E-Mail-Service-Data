@@ -17,6 +17,28 @@
           "DataAccess.dll": {}
         }
       },
+      "Auth0.Core/7.15.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.Core.dll": {
+            "assemblyVersion": "7.15.0.0",
+            "fileVersion": "7.15.0.0"
+          }
+        }
+      },
+      "Auth0.ManagementApi/7.15.0": {
+        "dependencies": {
+          "Auth0.Core": "7.15.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {
+            "assemblyVersion": "7.15.0.0",
+            "fileVersion": "7.15.0.0"
+          }
+        }
+      },
       "Autofac/6.3.0": {
         "dependencies": {
           "System.Diagnostics.DiagnosticSource": "5.0.0"
@@ -80,53 +102,53 @@
           }
         }
       },
-      "Google.Apis/1.56.0": {
+      "Google.Apis/1.57.0": {
         "dependencies": {
-          "Google.Apis.Core": "1.56.0"
+          "Google.Apis.Core": "1.57.0"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.dll": {
-            "assemblyVersion": "1.56.0.0",
-            "fileVersion": "1.56.0.0"
+            "assemblyVersion": "1.57.0.0",
+            "fileVersion": "1.57.0.0"
           }
         }
       },
-      "Google.Apis.Auth/1.56.0": {
+      "Google.Apis.Auth/1.57.0": {
         "dependencies": {
-          "Google.Apis": "1.56.0",
-          "Google.Apis.Core": "1.56.0"
+          "Google.Apis": "1.57.0",
+          "Google.Apis.Core": "1.57.0"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
-            "assemblyVersion": "1.56.0.0",
-            "fileVersion": "1.56.0.0"
+            "assemblyVersion": "1.57.0.0",
+            "fileVersion": "1.57.0.0"
           },
           "lib/netstandard2.0/Google.Apis.Auth.dll": {
-            "assemblyVersion": "1.56.0.0",
-            "fileVersion": "1.56.0.0"
+            "assemblyVersion": "1.57.0.0",
+            "fileVersion": "1.57.0.0"
           }
         }
       },
-      "Google.Apis.Core/1.56.0": {
+      "Google.Apis.Core/1.57.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {
-            "assemblyVersion": "1.56.0.0",
-            "fileVersion": "1.56.0.0"
+            "assemblyVersion": "1.57.0.0",
+            "fileVersion": "1.57.0.0"
           }
         }
       },
-      "Google.Apis.Gmail.v1/1.56.0.2510": {
+      "Google.Apis.Gmail.v1/1.57.0.2650": {
         "dependencies": {
-          "Google.Apis": "1.56.0",
-          "Google.Apis.Auth": "1.56.0"
+          "Google.Apis": "1.57.0",
+          "Google.Apis.Auth": "1.57.0"
         },
         "runtime": {
           "lib/netstandard2.0/Google.Apis.Gmail.v1.dll": {
-            "assemblyVersion": "1.56.0.2510",
-            "fileVersion": "1.56.0.2510"
+            "assemblyVersion": "1.57.0.2650",
+            "fileVersion": "1.57.0.2650"
           }
         }
       },
@@ -469,15 +491,15 @@
           }
         }
       },
-      "MimeKit/3.1.1": {
+      "MimeKit/3.2.0": {
         "dependencies": {
           "Portable.BouncyCastle": "1.9.0",
           "System.Security.Cryptography.Pkcs": "5.0.0"
         },
         "runtime": {
           "lib/net5.0/MimeKit.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.1.0"
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
           }
         }
       },
@@ -1495,13 +1517,14 @@
       },
       "Core/1.0.0": {
         "dependencies": {
+          "Auth0.ManagementApi": "7.15.0",
           "Autofac": "6.3.0",
           "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Autofac.Extras.DynamicProxy": "6.0.1",
           "FluentValidation": "10.4.0",
-          "Google.Apis.Gmail.v1": "1.56.0.2510",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
-          "MimeKit": "3.1.1"
+          "Google.Apis.Gmail.v1": "1.57.0.2650",
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "MimeKit": "3.2.0"
         },
         "runtime": {
           "Core.dll": {}
@@ -1522,6 +1545,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Auth0.Core/7.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9uEDMzMnjPcgWitvk3ZmJyYYELKYMqKTlZ6pvnFkkRfeHU0frVyarpCPCLRT4RYEaSAnVZQMVsPGwuTqMYIiTQ==",
+      "path": "auth0.core/7.15.0",
+      "hashPath": "auth0.core.7.15.0.nupkg.sha512"
+    },
+    "Auth0.ManagementApi/7.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q54XpZrChDD+Qh6B2fTvSP95Ubw41Z7aAgX/xAXKVGFDaMHBc7h4NMYnowqXkHLGlkq/eaoWW9bk/yjcOixXXQ==",
+      "path": "auth0.managementapi/7.15.0",
+      "hashPath": "auth0.managementapi.7.15.0.nupkg.sha512"
     },
     "Autofac/6.3.0": {
       "type": "package",
@@ -1558,33 +1595,33 @@
       "path": "fluentvalidation/10.4.0",
       "hashPath": "fluentvalidation.10.4.0.nupkg.sha512"
     },
-    "Google.Apis/1.56.0": {
+    "Google.Apis/1.57.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Oi/M8PmtmXo+3gBX0ZxaijQULuZKnNjDNIceRA+OcUUn3pmYhljGSAWcsWUY64KgdzurM9kF5MoCSWqevzR/UA==",
-      "path": "google.apis/1.56.0",
-      "hashPath": "google.apis.1.56.0.nupkg.sha512"
+      "sha512": "sha512-30V7T2G98HQjfI6y0AzBOXJUu7j7Trl1ZzH0e6DKmUaXNCvdMPwxApjBKESeTOkWjMdFRmkpAGyDEoxim+Xq1A==",
+      "path": "google.apis/1.57.0",
+      "hashPath": "google.apis.1.57.0.nupkg.sha512"
     },
-    "Google.Apis.Auth/1.56.0": {
+    "Google.Apis.Auth/1.57.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/TXElJg0lP47/MdYKtzWnrf2suwovKmeHslyUbyITQ9SGby4yj7Aj07QOufc9FjdciA8MrNZXsEqExID7LKblw==",
-      "path": "google.apis.auth/1.56.0",
-      "hashPath": "google.apis.auth.1.56.0.nupkg.sha512"
+      "sha512": "sha512-xNY9rprn3iih1H5dymbxxHeZggn4bMYKtYdwO3Yr+Cj06f6xrxnL0LqEi1bmG46LBY2FlVMy9NKIF99tZ6ZBZg==",
+      "path": "google.apis.auth/1.57.0",
+      "hashPath": "google.apis.auth.1.57.0.nupkg.sha512"
     },
-    "Google.Apis.Core/1.56.0": {
+    "Google.Apis.Core/1.57.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mhntBSe9/bXVP6EeB2g+Db6N4dzVYL12t+nkVcNTZzaI6fEFIp1l5BggmMMk6vY1Q/HUpZ5iHA/+h7j2pWWX5w==",
-      "path": "google.apis.core/1.56.0",
-      "hashPath": "google.apis.core.1.56.0.nupkg.sha512"
+      "sha512": "sha512-5wuY88PewhfaWsk37EEHcwU6CFqxpaWMm20ogWLXmaCw8NbTlV/Lna0gjtr2jpTLgb3mtVa7RC1AG/mgi530SQ==",
+      "path": "google.apis.core/1.57.0",
+      "hashPath": "google.apis.core.1.57.0.nupkg.sha512"
     },
-    "Google.Apis.Gmail.v1/1.56.0.2510": {
+    "Google.Apis.Gmail.v1/1.57.0.2650": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fVyJF5kBM8LZeEd09Dsc6X/ZNUj1nz91JagtKEd8AX3B9KTGdwh/FKZkiNJa2kVCQg5TDzqPsfS4RRTMV4IKLQ==",
-      "path": "google.apis.gmail.v1/1.56.0.2510",
-      "hashPath": "google.apis.gmail.v1.1.56.0.2510.nupkg.sha512"
+      "sha512": "sha512-KylGtcyD3Miuhcx9kJwJHQqIxnK37HtpVb3vBn/nZpz9ofdjc0BLFXfv2lbovw6js+PXt7A2J0Q12UooSfqOcw==",
+      "path": "google.apis.gmail.v1/1.57.0.2650",
+      "hashPath": "google.apis.gmail.v1.1.57.0.2650.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -1782,12 +1819,12 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
-    "MimeKit/3.1.1": {
+    "MimeKit/3.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aY2fuCucJ0S5gWeak8o7aSZXm19Vr/rJj746+RlvUrPKzUESDyXKLoxqW6rs7z4DA0qJ1AQxEAO2MnWxZncLGA==",
-      "path": "mimekit/3.1.1",
-      "hashPath": "mimekit.3.1.1.nupkg.sha512"
+      "sha512": "sha512-l9YHMBhBUwY7qQHUp8fw0EvjcbmhN4Iggz6MdjqIShBf42+0nJTa5gu0kuupCOPuiARc9ZaS9c9f0gKz4OnxKw==",
+      "path": "mimekit/3.2.0",
+      "hashPath": "mimekit.3.2.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

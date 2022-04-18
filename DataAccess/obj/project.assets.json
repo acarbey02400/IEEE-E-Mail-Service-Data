@@ -2,6 +2,30 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Auth0.Core/7.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.Core.dll": {}
+        }
+      },
+      "Auth0.ManagementApi/7.15.0": {
+        "type": "package",
+        "dependencies": {
+          "Auth0.Core": "7.15.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Auth0.ManagementApi.dll": {}
+        }
+      },
       "Autofac/6.3.0": {
         "type": "package",
         "dependencies": {
@@ -70,10 +94,10 @@
           "lib/net5.0/FluentValidation.dll": {}
         }
       },
-      "Google.Apis/1.56.0": {
+      "Google.Apis/1.57.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.56.0"
+          "Google.Apis.Core": "1.57.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.dll": {}
@@ -82,11 +106,11 @@
           "lib/netstandard2.0/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.56.0": {
+      "Google.Apis.Auth/1.57.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.56.0",
-          "Google.Apis.Core": "1.56.0"
+          "Google.Apis": "1.57.0",
+          "Google.Apis.Core": "1.57.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
@@ -97,7 +121,7 @@
           "lib/netstandard2.0/Google.Apis.Auth.dll": {}
         }
       },
-      "Google.Apis.Core/1.56.0": {
+      "Google.Apis.Core/1.57.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -109,11 +133,11 @@
           "lib/netstandard2.0/Google.Apis.Core.dll": {}
         }
       },
-      "Google.Apis.Gmail.v1/1.56.0.2510": {
+      "Google.Apis.Gmail.v1/1.57.0.2650": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.56.0",
-          "Google.Apis.Auth": "1.56.0"
+          "Google.Apis": "1.57.0",
+          "Google.Apis.Auth": "1.57.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Gmail.v1.dll": {}
@@ -522,7 +546,7 @@
           }
         }
       },
-      "MimeKit/3.1.1": {
+      "MimeKit/3.2.0": {
         "type": "package",
         "dependencies": {
           "Portable.BouncyCastle": "1.9.0",
@@ -2247,15 +2271,16 @@
       },
       "Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Auth0.ManagementApi": "7.15.0",
           "Autofac": "6.3.0",
           "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Autofac.Extras.DynamicProxy": "6.0.1",
           "FluentValidation": "10.4.0",
-          "Google.Apis.Gmail.v1": "1.56.0.2510",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.1",
-          "MimeKit": "3.1.1"
+          "Google.Apis.Gmail.v1": "1.57.0.2650",
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "MimeKit": "3.2.0"
         },
         "compile": {
           "bin/placeholder/Core.dll": {}
@@ -2280,6 +2305,38 @@
     }
   },
   "libraries": {
+    "Auth0.Core/7.15.0": {
+      "sha512": "9uEDMzMnjPcgWitvk3ZmJyYYELKYMqKTlZ6pvnFkkRfeHU0frVyarpCPCLRT4RYEaSAnVZQMVsPGwuTqMYIiTQ==",
+      "type": "package",
+      "path": "auth0.core/7.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.core.7.15.0.nupkg.sha512",
+        "auth0.core.nuspec",
+        "lib/net452/Auth0.Core.dll",
+        "lib/net452/Auth0.Core.xml",
+        "lib/netstandard2.0/Auth0.Core.dll",
+        "lib/netstandard2.0/Auth0.Core.xml"
+      ]
+    },
+    "Auth0.ManagementApi/7.15.0": {
+      "sha512": "Q54XpZrChDD+Qh6B2fTvSP95Ubw41Z7aAgX/xAXKVGFDaMHBc7h4NMYnowqXkHLGlkq/eaoWW9bk/yjcOixXXQ==",
+      "type": "package",
+      "path": "auth0.managementapi/7.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Auth0Icon.png",
+        "auth0.managementapi.7.15.0.nupkg.sha512",
+        "auth0.managementapi.nuspec",
+        "lib/net452/Auth0.ManagementApi.dll",
+        "lib/net452/Auth0.ManagementApi.xml",
+        "lib/netstandard2.0/Auth0.ManagementApi.dll",
+        "lib/netstandard2.0/Auth0.ManagementApi.xml"
+      ]
+    },
     "Autofac/6.3.0": {
       "sha512": "gO4bli0N8tDnBHzbYktcnbXlmN6T+IT5W+FUGgCUaM6pwwHXIxOPoUGvfGum7sZpJJgfQNgjFFv80ZPuARgRdA==",
       "type": "package",
@@ -2388,16 +2445,16 @@
         "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
-    "Google.Apis/1.56.0": {
-      "sha512": "Oi/M8PmtmXo+3gBX0ZxaijQULuZKnNjDNIceRA+OcUUn3pmYhljGSAWcsWUY64KgdzurM9kF5MoCSWqevzR/UA==",
+    "Google.Apis/1.57.0": {
+      "sha512": "30V7T2G98HQjfI6y0AzBOXJUu7j7Trl1ZzH0e6DKmUaXNCvdMPwxApjBKESeTOkWjMdFRmkpAGyDEoxim+Xq1A==",
       "type": "package",
-      "path": "google.apis/1.56.0",
+      "path": "google.apis/1.57.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.1.56.0.nupkg.sha512",
+        "google.apis.1.57.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -2411,16 +2468,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.56.0": {
-      "sha512": "/TXElJg0lP47/MdYKtzWnrf2suwovKmeHslyUbyITQ9SGby4yj7Aj07QOufc9FjdciA8MrNZXsEqExID7LKblw==",
+    "Google.Apis.Auth/1.57.0": {
+      "sha512": "xNY9rprn3iih1H5dymbxxHeZggn4bMYKtYdwO3Yr+Cj06f6xrxnL0LqEi1bmG46LBY2FlVMy9NKIF99tZ6ZBZg==",
       "type": "package",
-      "path": "google.apis.auth/1.56.0",
+      "path": "google.apis.auth/1.57.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.56.0.nupkg.sha512",
+        "google.apis.auth.1.57.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
@@ -2440,16 +2497,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.56.0": {
-      "sha512": "mhntBSe9/bXVP6EeB2g+Db6N4dzVYL12t+nkVcNTZzaI6fEFIp1l5BggmMMk6vY1Q/HUpZ5iHA/+h7j2pWWX5w==",
+    "Google.Apis.Core/1.57.0": {
+      "sha512": "5wuY88PewhfaWsk37EEHcwU6CFqxpaWMm20ogWLXmaCw8NbTlV/Lna0gjtr2jpTLgb3mtVa7RC1AG/mgi530SQ==",
       "type": "package",
-      "path": "google.apis.core/1.56.0",
+      "path": "google.apis.core/1.57.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.56.0.nupkg.sha512",
+        "google.apis.core.1.57.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -2462,16 +2519,16 @@
         "lib/netstandard2.0/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.Gmail.v1/1.56.0.2510": {
-      "sha512": "fVyJF5kBM8LZeEd09Dsc6X/ZNUj1nz91JagtKEd8AX3B9KTGdwh/FKZkiNJa2kVCQg5TDzqPsfS4RRTMV4IKLQ==",
+    "Google.Apis.Gmail.v1/1.57.0.2650": {
+      "sha512": "KylGtcyD3Miuhcx9kJwJHQqIxnK37HtpVb3vBn/nZpz9ofdjc0BLFXfv2lbovw6js+PXt7A2J0Q12UooSfqOcw==",
       "type": "package",
-      "path": "google.apis.gmail.v1/1.56.0.2510",
+      "path": "google.apis.gmail.v1/1.57.0.2650",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.gmail.v1.1.56.0.2510.nupkg.sha512",
+        "google.apis.gmail.v1.1.57.0.2650.nupkg.sha512",
         "google.apis.gmail.v1.nuspec",
         "lib/net40/Google.Apis.Gmail.v1.dll",
         "lib/net40/Google.Apis.Gmail.v1.pdb",
@@ -3190,10 +3247,10 @@
         "version.txt"
       ]
     },
-    "MimeKit/3.1.1": {
-      "sha512": "aY2fuCucJ0S5gWeak8o7aSZXm19Vr/rJj746+RlvUrPKzUESDyXKLoxqW6rs7z4DA0qJ1AQxEAO2MnWxZncLGA==",
+    "MimeKit/3.2.0": {
+      "sha512": "l9YHMBhBUwY7qQHUp8fw0EvjcbmhN4Iggz6MdjqIShBf42+0nJTa5gu0kuupCOPuiARc9ZaS9c9f0gKz4OnxKw==",
       "type": "package",
-      "path": "mimekit/3.1.1",
+      "path": "mimekit/3.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3201,9 +3258,9 @@
         "lib/net452/MimeKit.dll",
         "lib/net452/MimeKit.pdb",
         "lib/net452/MimeKit.xml",
-        "lib/net46/MimeKit.dll",
-        "lib/net46/MimeKit.pdb",
-        "lib/net46/MimeKit.xml",
+        "lib/net461/MimeKit.dll",
+        "lib/net461/MimeKit.pdb",
+        "lib/net461/MimeKit.xml",
         "lib/net47/MimeKit.dll",
         "lib/net47/MimeKit.pdb",
         "lib/net47/MimeKit.xml",
@@ -3222,7 +3279,7 @@
         "lib/netstandard2.1/MimeKit.dll",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.3.1.1.nupkg.sha512",
+        "mimekit.3.2.0.nupkg.sha512",
         "mimekit.nuspec"
       ]
     },
@@ -7794,8 +7851,8 @@
     },
     "Core/1.0.0": {
       "type": "project",
-      "path": "../ReCapProject/Core/Core.csproj",
-      "msbuildProject": "../ReCapProject/Core/Core.csproj"
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     },
     "Entities/1.0.0": {
       "type": "project",
@@ -7812,19 +7869,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kullanici\\.nuget\\packages\\": {}
+    "C:\\Users\\90533\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\Kullanici\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kullanici\\source\\repos\\DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\90533\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kullanici\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\90533\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7838,11 +7895,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Kullanici\\source\\repos\\Entities\\Entities.csproj"
+            "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Core\\Core.csproj"
             },
-            "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\Kullanici\\source\\repos\\ReCapProject\\Core\\Core.csproj"
+            "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\90533\\source\\repos\\IEEE-E-Mail-Service-Data\\Entities\\Entities.csproj"
             }
           }
         }
@@ -7881,7 +7938,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
