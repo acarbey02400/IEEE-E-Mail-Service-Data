@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,12 +28,14 @@ namespace E_MailService
         IUserService _userService;
         ICustomerService _customerService;
         IEmailService _emailService;
+        
         public LogIn( IUserService userService, ICustomerService customerService,IEmailService emailService)
         {
             InitializeComponent();
             //UserManager userManager = new UserManager(new UserDal()); //Burada program çalışırken işlem yapacağımız manager'ı çağırarak programın daha hızlı çalışmasını sağlıyoruz
             LogManager logManager = new LogManager(new LogDal());
-           // _userManager = userManager;
+            
+            // _userManager = userManager;
             _logManager = logManager;
             _customerService = customerService;
             _emailService = emailService;
@@ -40,7 +43,7 @@ namespace E_MailService
             //using (TextReader text = new StreamReader(@".\updateLabel.txt")) //Güncelleme işlemini kontrol etmek için label'i önce en son güncellemeden gelen label değeri ile değiştiriyoruz
             //{
             //    updateLabel.Text = text.ReadToEnd();
-                
+
             //}       
             //WebClientUpdateSystem updateSystem = new WebClientUpdateSystem();
             //var _result = updateSystem.updateControl(updateLabel.Text); //Güncellememizin olup olmadığını kontrol etmek için fonksiyonumuzu çağırıyoruz
@@ -58,8 +61,9 @@ namespace E_MailService
             //        updateSystem.update(path, fileName, pid);
             //        Process.Start(@".\UpdateSystem\UpdateSystem.exe");
             //    }
-                
+
             //}
+           
             
         }
 

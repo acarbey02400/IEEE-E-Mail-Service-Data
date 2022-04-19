@@ -1,3 +1,0 @@
-C:\Users\90533\source\repos\IEEE-E-Mail-Service-Data\E-MailService\bin\Debug\net5.0-windows\
-E-MailService.exe
-14256

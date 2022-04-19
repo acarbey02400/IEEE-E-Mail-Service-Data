@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="15328">
       <assemblyIdentity name="Launcher" version="5.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sz2DGhqfybOrd8ItHmiOEfz1B7R5kBjHNV2BTwLVm8I=</dsig:DigestValue>
+        <dsig:DigestValue>aC+uKdpsTQaYKbFpIv1tlScD4a0Q+qXy+4L6tAW7NvA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -621,22 +621,22 @@
       <dsig:DigestValue>zUXwZerrzuHkUrjdbXNOzo/cPbcG2CzQj44wT5qSPzw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="E-MailService.dll" size="61440">
+  <file name="E-MailService.dll" size="63456">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>xqDrhLIvK6wnVDvoHB5/HqpvbMKZjC/8YVhh7LWusU8=</dsig:DigestValue>
+      <dsig:DigestValue>VV5sltiTowszfwI7kp+np9LxNvyb8tH2meGdpZLCyWo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="E-MailService.exe" size="125952">
+  <file name="E-MailService.exe" size="126944">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>yKyHo3Zus9XmrcPJfbCH0YsF3rY10xqCsitoBbWtdIE=</dsig:DigestValue>
+      <dsig:DigestValue>95gfDKZAUijPgGsCn1h81UoWQyiIZJm7Pv695iDO/3Q=</dsig:DigestValue>
     </hash>
   </file>
   <file name="E-MailService.runtimeconfig.json" size="380">

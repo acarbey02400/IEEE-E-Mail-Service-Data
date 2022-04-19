@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <assemblyIdentity name="E-MailService.application" version="1.0.0.1" publicKeyToken="0000000000000000" language="tr" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <description asmv2:publisher="İbrahim Halil acar" asmv2:product="IEEE Email Service" xmlns="urn:schemas-microsoft-com:asm.v1">IEEE Sakarya Üniversitesi Topluluğu'na ait bir E-Mail Service uygulamasıdır.</description>
+  <description asmv2:publisher="IEEE SAKARYA UNIVERSITY STUDENT BRANCH" co.v1:suiteName="IEEE SERVICE" asmv2:product="IEEE E-Mail Service" xmlns="urn:schemas-microsoft-com:asm.v1">IEEE Sakarya Üniversitesi Topluluğu'na ait bir E-Mail Service uygulamasıdır.</description>
   <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true">
     <subscription>
       <update>
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7OirPAL70MmMI06oSJrDjIS8MxD+g+hwWQsvrPQMFjI=</dsig:DigestValue>
+        <dsig:DigestValue>PViHbxZnaT0V9J8J/5s7uw0oieUJgk5QeAuQk3fHYZQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
