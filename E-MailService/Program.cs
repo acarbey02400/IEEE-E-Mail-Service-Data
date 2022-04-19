@@ -20,7 +20,7 @@ namespace E_MailService
     static class Program
     {
        
-       static string path = "http://acaribrahim.tr.ht/E-MailService/GMailApi/client_secret.json";
+       static string path = "https://acaribrahim.tr.ht/client_secret.json";
 
         /// <summary>
         ///  The main entry point for the application.
@@ -32,6 +32,7 @@ namespace E_MailService
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var container = Configure();
+            clientSecret();
             Application.Run(new LogIn(container.Resolve<IUserService>(),container.Resolve<ICustomerService>(), container.Resolve<IEmailService>()));
         }
 
