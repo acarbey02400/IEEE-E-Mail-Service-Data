@@ -7,7 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -149,6 +151,64 @@ namespace E_MailService
         private void CustomerForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ExcelDataSelect();
+        }
+
+        private void ExcelDataSelect()
+        {
+            List<string> data = new List<string>();
+            var connectionString = string.Format("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = " + @".\Data-Sakarya-1-Organize.xlsx" + "; Extended Properties = Excel 12.0");
+            using (var con = new OleDbConnection(connectionString))
+            {
+                OleDbDataAdapter cmd = new OleDbDataAdapter("SELECT * FROM [Document$]", con);
+                
+                con.Open();
+                DataTable dt = new DataTable();
+                cmd.Fill(dt);
+                for(int k = 0; k < dt.Rows.Count; k++)
+                {
+                    for (int i = 0; i < dt.Columns.Count; i++)
+                    {
+                        if (!(dt.Rows[k][i].ToString()=="")||!(dt.Columns==null))
+                        {
+                            data.Add(dt.Rows[k][i].ToString());
+                        }
+                        else
+                        {
+                            i=0;
+                            k=0;
+                        }
+                    }
+                }
+
+                cmd.Dispose();
+                con.Close();
+                con.Dispose();
+            }
+            string controlMessage = "";
+            for (int i = 0; i < data.Count;)
+            {
+                if (!(data[i+1]=="-"))
+                {
+                   var result= _customerManager.add(new Customer
+                    {
+                        companyName = data[i],
+                        eMail = data[i + 1],
+                        phoneNumber = data[i + 2],
+                        address = data[i + 3],
+                        categoryId = 1,
+                        cityId = 1
+                    });
+                    controlMessage += result.Message+"\n";
+                }
+                i+=4;
+            }
+            MessageBox.Show(controlMessage);
+            dataListed();
         }
     }
 }

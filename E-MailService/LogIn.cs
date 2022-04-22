@@ -32,6 +32,7 @@ namespace E_MailService
         public LogIn( IUserService userService, ICustomerService customerService,IEmailService emailService)
         {
             InitializeComponent();
+           
             //UserManager userManager = new UserManager(new UserDal()); //Burada program çalışırken işlem yapacağımız manager'ı çağırarak programın daha hızlı çalışmasını sağlıyoruz
             LogManager logManager = new LogManager(new LogDal());
             
@@ -40,29 +41,29 @@ namespace E_MailService
             _customerService = customerService;
             _emailService = emailService;
             _userService = userService;
-            //using (TextReader text = new StreamReader(@".\updateLabel.txt")) //Güncelleme işlemini kontrol etmek için label'i önce en son güncellemeden gelen label değeri ile değiştiriyoruz
-            //{
-            //    updateLabel.Text = text.ReadToEnd();
+            using (TextReader text = new StreamReader(@".\UpdateSystem\updateLabel.txt")) //Güncelleme işlemini kontrol etmek için label'i önce en son güncellemeden gelen label değeri ile değiştiriyoruz
+            {
+                updateLabel.Text = text.ReadToEnd();
 
-            //}       
-            //WebClientUpdateSystem updateSystem = new WebClientUpdateSystem();
-            //var _result = updateSystem.updateControl(updateLabel.Text); //Güncellememizin olup olmadığını kontrol etmek için fonksiyonumuzu çağırıyoruz
-            //if (_result.Success)
-            //{
-            //    DialogResult result = MessageBox.Show("Yeni Güncelleme Tespit edildi. Yüklemek için Evet'e basın", "Uyarı!",
-            //MessageBoxButtons.YesNo);
+            }       
+            WebClientUpdateSystem updateSystem = new WebClientUpdateSystem();
+            var _result = updateSystem.updateControl(updateLabel.Text); //Güncellememizin olup olmadığını kontrol etmek için fonksiyonumuzu çağırıyoruz
+            if (_result.Success)
+            {
+                DialogResult result = MessageBox.Show("Yeni Güncelleme Tespit edildi. Yüklemek için Evet'e basın", "Uyarı!",
+            MessageBoxButtons.YesNo);
 
-            //    //Burada programımızın başlangıç noktası ismi ve process id gibi özelliklerini gönderiyoruz. Böylece update programımız çalışırken bu bilgileri alıp gerekli işlemleri yapabilecek
-            //    if (result == DialogResult.Yes)
-            //    {
-            //        string path = Application.StartupPath;
-            //        string fileName = Path.GetFileName(Application.ExecutablePath);
-            //        string pid = Process.GetCurrentProcess().Id.ToString();
-            //        updateSystem.update(path, fileName, pid);
-            //        Process.Start(@".\UpdateSystem\UpdateSystem.exe");
-            //    }
+                //Burada programımızın başlangıç noktası ismi ve process id gibi özelliklerini gönderiyoruz. Böylece update programımız çalışırken bu bilgileri alıp gerekli işlemleri yapabilecek
+                if (result == DialogResult.Yes)
+                {
+                    string path = Application.StartupPath;
+                    string fileName = Path.GetFileName(Application.ExecutablePath);
+                    string pid = Process.GetCurrentProcess().Id.ToString();
+                    updateSystem.update(path, fileName, pid);
+                    Process.Start(@".\UpdateSystem\UpdateSystem.exe");
+                }
 
-            //}
+            }
            
             
         }
