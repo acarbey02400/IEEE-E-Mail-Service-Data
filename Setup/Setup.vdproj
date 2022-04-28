@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6396E1470F324E3B9CA4FFB41AC33E7E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6FEE9280604046C7AA99035D5E42064E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -45,19 +51,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B351FCF60E1E4B59988BC091019B0B01"
+        "MsmKey" = "8:_8F5C693B4E1F4AF9B0F7E2CB333A0413"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B91895AC3C5E43D8A33682AD42B508FB"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F935393CE7664CCCB9FE7418AE9E47AD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -346,7 +346,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:IEEE Email Service"
         "ProductCode" = "8:{1E2DBEFF-F7BC-473C-AB08-8ECA69531D93}"
-        "PackageCode" = "8:{A497458F-52B1-4274-BC69-8E8E241470B4}"
+        "PackageCode" = "8:{EF5E99F3-5567-43C5-8807-97C317999C12}"
         "UpgradeCode" = "8:{7FFA067D-F4AA-48A7-A992-102C1568A032}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -466,7 +466,21 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E9225B8DCC814AA3989D40259EDD76C1"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D221BFEF09644F7580809BE5BC751FD3"
+            {
+            "Name" = "8:UpdateSystem"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_8F5C693B4E1F4AF9B0F7E2CB333A0413"
+            "Folder" = "8:_0267ACEAFE0243B0B2D9426CF87F5B47"
+            "WorkingFolder" = "8:_0267ACEAFE0243B0B2D9426CF87F5B47"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FBDE4326BF354E5E987A70FF549A1275"
             {
             "Name" = "8:E-MailService"
             "Arguments" = "8:"
@@ -474,8 +488,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_B351FCF60E1E4B59988BC091019B0B01"
-            "Folder" = "8:_A1BE76948CE94243A44A018BAF3D21B4"
+            "Target" = "8:_6396E1470F324E3B9CA4FFB41AC33E7E"
+            "Folder" = "8:_FD36DD279F464394903C79F13728A1C3"
             "WorkingFolder" = "8:_A1BE76948CE94243A44A018BAF3D21B4"
             "Icon" = "8:"
             "Feature" = "8:"
@@ -879,7 +893,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B351FCF60E1E4B59988BC091019B0B01"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_6396E1470F324E3B9CA4FFB41AC33E7E"
             {
             "SourcePath" = "8:..\\E-MailService\\obj\\Debug\\net5.0-windows\\apphost.exe"
             "TargetName" = "8:"
@@ -907,7 +921,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F935393CE7664CCCB9FE7418AE9E47AD"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8F5C693B4E1F4AF9B0F7E2CB333A0413"
             {
             "SourcePath" = "8:..\\UpdateSystem\\obj\\Debug\\net5.0-windows\\apphost.exe"
             "TargetName" = "8:"

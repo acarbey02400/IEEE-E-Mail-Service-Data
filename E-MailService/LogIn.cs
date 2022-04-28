@@ -41,7 +41,7 @@ namespace E_MailService
             _customerService = customerService;
             _emailService = emailService;
             _userService = userService;
-            using (TextReader text = new StreamReader(@".\UpdateSystem\updateLabel.txt")) //Güncelleme işlemini kontrol etmek için label'i önce en son güncellemeden gelen label değeri ile değiştiriyoruz
+            using (TextReader text = new StreamReader(@".\updateLabel.txt")) //Güncelleme işlemini kontrol etmek için label'i önce en son güncellemeden gelen label değeri ile değiştiriyoruz
             {
                 updateLabel.Text = text.ReadToEnd();
 

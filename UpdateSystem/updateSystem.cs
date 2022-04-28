@@ -55,7 +55,7 @@ namespace UpdateSystem
             string fileName = "";
             string pid = info[2];
             server += updateLabel+"/";
-            //Process.GetProcessById(Convert.ToInt32(pid)).Kill();
+            Process.GetProcessById(Convert.ToInt32(pid)).Kill();
             string[] controlMessage;
 
             using (WebClient client = new WebClient())
@@ -78,14 +78,14 @@ namespace UpdateSystem
                 }
 
                 UpdateLabel(updateLabel);
-                using (WebClient wc = new WebClient())
-                {
-                    if (!wc.DownloadString("https://acaribrahim.tr.ht/control.txt").Contains(updateLabel))
+               
+                    if (!client.DownloadString("https://acaribrahim.tr.ht/control.txt").Contains(updateLabel))
                     {
                         updateStart();
+                        return;
                     }
                     MessageBox.Show("Güncelleme işlemi tamamlandı, uygulamayı yeniden başlatınız...");
-                }
+                
             }
 
             

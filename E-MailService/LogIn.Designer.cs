@@ -53,7 +53,7 @@ namespace E_MailService
             this.gb1.Controls.Add(this.label9);
             this.gb1.Location = new System.Drawing.Point(12, 12);
             this.gb1.Name = "gb1";
-            this.gb1.Size = new System.Drawing.Size(209, 240);
+            this.gb1.Size = new System.Drawing.Size(172, 240);
             this.gb1.TabIndex = 1;
             this.gb1.TabStop = false;
             this.gb1.Text = "GİRİŞ";
@@ -98,7 +98,7 @@ namespace E_MailService
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(113, 205);
+            this.button2.Location = new System.Drawing.Point(75, 199);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(81, 29);
             this.button2.TabIndex = 22;
@@ -148,9 +148,10 @@ namespace E_MailService
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(237, 259);
+            this.ClientSize = new System.Drawing.Size(189, 255);
             this.Controls.Add(this.gb1);
             this.Name = "LogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
             this.Load += new System.EventHandler(this.LogIn_Load);
             this.gb1.ResumeLayout(false);
